@@ -8,6 +8,7 @@ import com.example.regionkommune2v1.model.Region;
 import java.util.List;
 
 @RestController
+@CrossOrigin
 public class RegionRESTController {
 
     @Autowired
@@ -24,5 +25,5 @@ public class RegionRESTController {
         System.out.println(region);
         return regionRepository.save(region);
     }
-    
+
 }
